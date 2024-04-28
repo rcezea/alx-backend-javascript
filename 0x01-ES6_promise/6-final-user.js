@@ -15,6 +15,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         delete result.reason;
         newArray.push(result);
       }
+      return newArray;
     });
-  return newArray;
 }
