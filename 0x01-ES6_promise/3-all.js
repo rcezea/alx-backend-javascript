@@ -1,4 +1,5 @@
-import {uploadPhoto, createUser} from "./utils";
+import { uploadPhoto, createUser } from "./utils";
+
 export default function handleProfileSignup() {
     let str = '';
 
@@ -8,7 +9,7 @@ export default function handleProfileSignup() {
             return createUser();
         })
         .then((resp) => {
-            str += resp.firstName + " " + resp.lastName;
+            str += `${resp.firstName} ${resp.lastName}`;
             console.log(str);
         })
         .catch(() => {
