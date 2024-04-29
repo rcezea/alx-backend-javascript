@@ -7,7 +7,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     uploadPhoto(fileName)
   ]).then(([userResult, photoResult]) => {
     const userStatus = userResult.status === 'fulfilled' ? 'fulfilled' : 'rejected';
-    const photoStatus = photoResult.status === 'fulfilled' ? 'fulfilled' : 'rejected';
+    const photoStatus = photoResult.status;
 
     return [
       { status: userStatus, value: userResult.value},
