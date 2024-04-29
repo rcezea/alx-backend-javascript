@@ -12,8 +12,8 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         // eslint-disable-next-line no-param-reassign
         result2.value = `Error: ${result2.reason.message}`;
         // eslint-disable-next-line no-param-reassign
-        delete result.reason;
-        newArray.push(result);
+        delete result2.reason;
+        newArray.push(result2);
       }
       return newArray;
     });
