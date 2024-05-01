@@ -1,6 +1,6 @@
 export const weakMap = new WeakMap();
 
-export function count(endpoint) {
+function count(endpoint) {
   weakMap.set(endpoint, (weakMap.get(endpoint) || 0) + 1);
   return weakMap.get(endpoint);
 }
