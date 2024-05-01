@@ -1,4 +1,6 @@
-export const weakMap = new WeakMap();
+// eslint-disable-next-line import/no-mutable-exports
+export let weakMap;
+export default weakMap = new WeakMap();
 
 function count(endpoint) {
   weakMap.set(endpoint, (weakMap.get(endpoint) || 0) + 1);
