@@ -10,7 +10,6 @@ function countStudents(path) {
 
 
     const lines = data.split('\n').filter(line => line.trim() !== '');
-    console.log(lines)
 
     const students = {};
     let totalStudents = 0;
