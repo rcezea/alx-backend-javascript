@@ -33,7 +33,7 @@ function countStudents (path) {
         result += msg;
       }
 
-      console.log(result)
+      console.log(result);
       resolve(result);
     });
   });
