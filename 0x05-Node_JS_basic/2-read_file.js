@@ -1,7 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 
-function countStudents(dbName) {
+function countStudents (dbName) {
   if (fs.existsSync(dbName)) {
     const stream = fs.createReadStream(dbName);
     const reader = readline.createInterface({ input: stream });
